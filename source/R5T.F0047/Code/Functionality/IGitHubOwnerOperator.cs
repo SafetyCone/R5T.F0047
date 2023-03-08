@@ -14,7 +14,7 @@ namespace R5T.F0047
 			{
 				_ when owner == Instances.GitHubOwners.DavidCoats => Instances.OrganizationNamespaceTokens.DavidCoats,
 				_ when owner == Instances.GitHubOwners.SafetyCone => Instances.OrganizationNamespaceTokens.Rivet,
-				_ => throw F0000.Instances.ExceptionOperator.GetUnhandledValueException(owner),
+				_ => throw F0000.Instances.ExceptionOperator.Get_UnhandledValueException(owner),
 			};
 
 			return output;
