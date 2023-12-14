@@ -26,7 +26,7 @@ namespace R5T.F0047
 			{
 				_ when gitHubOwner == Instances.GitHubOwners.DavidCoats => Instances.GitHubOwnerNames.DavidCoats,
 				_ when gitHubOwner == Instances.GitHubOwners.SafetyCone => Instances.GitHubOwnerNames.SafetyCone,
-				_ => throw F0000.SwitchOperator.Instance.GetUnrecognizedSwitchValueException(gitHubOwner, nameof(GitHubOwnerNames))
+				_ => throw F0000.SwitchOperator.Instance.Get_UnrecognizedSwitchValueException(gitHubOwner, nameof(GitHubOwnerNames))
 			};
 
 			return gitHubOwnerName;
@@ -38,7 +38,7 @@ namespace R5T.F0047
 			{
 				_ when gitHubOwnerName == Instances.GitHubOwnerNames.DavidCoats => Instances.GitHubOwners.DavidCoats,
 				_ when gitHubOwnerName == Instances.GitHubOwnerNames.SafetyCone => Instances.GitHubOwners.SafetyCone,
-				_ => throw F0000.SwitchOperator.Instance.GetUnrecognizedSwitchValueException(gitHubOwnerName, nameof(GitHubOwnerNames))
+				_ => throw F0000.SwitchOperator.Instance.Get_UnrecognizedSwitchValueException(gitHubOwnerName, nameof(GitHubOwnerNames))
 			};
 
 			return gitHubOwner;
